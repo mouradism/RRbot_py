@@ -74,7 +74,7 @@ def RRode(t, x ,Args):
     print(Jk.T @ S_ @ T)
     print('--------------------------^^^^^^^^^^^^^^-----------------------------------')
 
-    vFc = (-np.linalg.inv(MassMat) @ np.concatenate((dq, vFc)))[:3] + Jk.T @ S_ @ T
+    #vFc = (-np.linalg.inv(MassMat) @ np.concatenate((dq, vFc)))[:3] + Jk.T @ S_ @ T
     # Assign derivatives
     xdot[0:3] = dq
     xdot[3:6] = vFc[0:3]
